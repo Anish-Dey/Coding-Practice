@@ -1,6 +1,6 @@
 // Move all negative numbers to beginning and positive to end with constant extra space
 
-function arrangeNegatives(arr,n){
+function arrangeNegatives(arr){
     let n = arr.length;
     let j = 0;
     for(let i = 0; i < n; i++){

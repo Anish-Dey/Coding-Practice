@@ -4,10 +4,13 @@ function arrangeNegatives(arr){
     let n = arr.length;
     let j = 0;
     for(let i = 0; i < n; i++){
-        if(arr[i] < 0 && i!=j){
-            [arr[i], arr[j]] = [arr[j], arr[i]];
-            j++;
+        if(arr[i] < 0 ){
+            if(i!=j){
+                let temp = arr[i]
+                arr[i] = arr[j]
+                arr[j] = temp
         }
+          j++;
     }
     return arr;
 }

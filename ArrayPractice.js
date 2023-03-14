@@ -6,15 +6,13 @@ function arrangeNegatives(arr){
     for(let i = 0; i < n; i++){
         if(arr[i] < 0 ){
             if(i!=j){
-                let temp = arr[i]
-                arr[i] = arr[j]
-                arr[j] = temp
+                [arr[i], arr[j]] = [arr[j], arr[i]]
+            }
+            j++;
         }
-          j++;
     }
     return arr;
 }
-
 
 
 const arr = [-12, 11, -13, -5, 6, -7, 5, -3, -6]
